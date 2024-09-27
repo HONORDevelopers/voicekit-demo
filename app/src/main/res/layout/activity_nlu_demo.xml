@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".demo.NluDemoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/nlu_init"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:text="Init" />
+
+        <Button
+            android:id="@+id/nlu_destroy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Destroy" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/nlu_input_content_et"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:hint="请输入测试文本..."
+            android:scrollbars="vertical" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/nlu_word_type_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:text="分词粒度:" />
+
+        <EditText
+            android:id="@+id/nlu_word_type_et"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <Spinner
+            android:id="@+id/nlu_word_type_sp"
+            android:layout_width="60dp"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/nlu_split"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="分词" />
+
+    <TextView
+        android:id="@+id/nlu_show_split_tv"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:scrollbars="vertical"
+        android:text="分词结果" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/nlu_entity_source_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:text="实体来源:" />
+
+        <EditText
+            android:id="@+id/nlu_entity_source_et"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <Spinner
+            android:id="@+id/nlu_entity_source_sp"
+            android:layout_width="120dp"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/nlu_url_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingEnd="10dp"
+            android:text="url" />
+
+        <CheckBox
+            android:id="@+id/nlu_email_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingEnd="10dp"
+            android:text="email" />
+
+
+        <CheckBox
+            android:id="@+id/nlu_express_no_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingEnd="10dp"
+            android:text="expressNo" />
+
+        <CheckBox
+            android:id="@+id/nlu_id_no_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingEnd="10dp"
+            android:text="idNo" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/nlu_flight_no_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingEnd="10dp"
+            android:text="flightNo" />
+
+        <CheckBox
+            android:id="@+id/nlu_phone_num_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingEnd="10dp"
+            android:text="phoneNum" />
+
+        <CheckBox
+            android:id="@+id/nlu_location_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingEnd="10dp"
+            android:text="location" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/nlu_entity"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="实体识别" />
+
+    <TextView
+        android:id="@+id/nlu_show_entity_tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:text="实体结果" />
+
+</LinearLayout>

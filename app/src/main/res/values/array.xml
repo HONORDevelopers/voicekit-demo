@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="word_type">
+        <item>low</item>
+        <item>mixed</item>
+        <item>high</item>
+    </string-array>
+
+    <string-array name="entity_source">
+        <item>fromOcr</item>
+        <item>fromCopy</item>
+    </string-array>
+</resources>

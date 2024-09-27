@@ -1,0 +1,37 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+//        google()
+//        mavenCentral()
+
+        maven {
+            url "http://cmc.cloudartifact.dragon.tools.hihonor.com/artifactory/maven-remote"
+            allowInsecureProtocol = true
+        }
+
+        // 配置SDK的Maven仓地址。
+        maven {
+            url 'https://developer.hihonor.com/repo'
+        }
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+//        google()
+//        mavenCentral()
+
+        maven {
+            url "http://cmc.cloudartifact.dragon.tools.hihonor.com/artifactory/maven-remote"
+            allowInsecureProtocol = true
+        }
+
+        // 配置SDK的Maven仓地址。
+        maven {
+            url 'https://developer.hihonor.com/repo'
+        }
+    }
+}
+
+rootProject.name = "voicekit-demo"
+include ':app'
